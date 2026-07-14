@@ -559,7 +559,7 @@
   #./services/databases/victoriatraces.nix
   ./services/desktops/accountsservice.nix
   #./services/desktops/adw-bluetooth.nix
-  #./services/desktops/ayatana-indicators.nix
+  ./services/desktops/ayatana-indicators.nix
   #./services/desktops/bamf.nix
   #./services/desktops/blueman.nix
   #./services/desktops/bonsaid.nix
