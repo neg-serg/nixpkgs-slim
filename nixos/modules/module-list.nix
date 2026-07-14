@@ -1046,7 +1046,7 @@
   #./services/monitoring/karma.nix
   #./services/monitoring/kthxbye.nix
   #./services/monitoring/librenms.nix
-  #./services/monitoring/loki.nix
+  ./services/monitoring/loki.nix
   #./services/monitoring/longview.nix
   #./services/monitoring/mackerel-agent.nix
   #./services/monitoring/metricbeat.nix
