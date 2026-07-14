@@ -2028,7 +2028,7 @@
   #./virtualisation/docker-rootless.nix
   ./virtualisation/docker.nix
   #./virtualisation/ecs-agent.nix
-  #./virtualisation/hyperv-guest.nix
+  ./virtualisation/hyperv-guest.nix
   #./virtualisation/incus-agent.nix
   #./virtualisation/incus.nix
   #./virtualisation/kvmgt.nix
@@ -2040,12 +2040,12 @@
   #./virtualisation/oci-options.nix
   #./virtualisation/openstack-options.nix
   #./virtualisation/openvswitch.nix
-  #./virtualisation/parallels-guest.nix
+  ./virtualisation/parallels-guest.nix
   #./virtualisation/podman/default.nix
   #./virtualisation/qemu-guest-agent.nix
   #./virtualisation/rosetta.nix
   #./virtualisation/spice-usb-redirection.nix
-  #./virtualisation/virtualbox-guest.nix
+  ./virtualisation/virtualbox-guest.nix
   #./virtualisation/virtualbox-host.nix
   #./virtualisation/vmware-guest.nix
   #./virtualisation/vmware-host.nix
