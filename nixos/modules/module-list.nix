@@ -155,7 +155,7 @@
   #./misc/mandoc.nix
   ./misc/meta.nix
   #./misc/nixops-autoluks.nix
-  #./misc/nixpkgs-flake.nix
+  ./misc/nixpkgs-flake.nix
   ./misc/nixpkgs.nix
   #./misc/passthru.nix
   ./misc/version.nix
