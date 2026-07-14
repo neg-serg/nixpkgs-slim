@@ -1866,7 +1866,7 @@
   #./services/web-servers/varnish/default.nix
   #./services/web-servers/vinyl-cache/default.nix
   #./services/x11/clight.nix
-  #./services/x11/colord.nix
+  ./services/x11/colord.nix
   #./services/x11/desktop-managers/default.nix
   ./services/x11/display-managers/default.nix
   ./services/x11/display-managers/lightdm.nix
