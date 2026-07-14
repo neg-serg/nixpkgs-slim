@@ -402,7 +402,7 @@
   #./security/ipa.nix
   #./security/isolate.nix
   ./security/krb5
-  #./security/lock-kernel-modules.nix
+  ./security/lock-kernel-modules.nix
   #./security/misc.nix
   #./security/oath.nix
   ./security/pam.nix
