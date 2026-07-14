@@ -1393,7 +1393,7 @@
   #./services/networking/scion/scion.nix
   #./services/networking/searx.nix
   #./services/networking/shadowsocks.nix
-  #./services/networking/shairport-sync.nix
+  ./services/networking/shairport-sync.nix
   #./services/networking/shellhub-agent.nix
   #./services/networking/shorewall6.nix
   #./services/networking/shorewall.nix
