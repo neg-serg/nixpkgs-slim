@@ -1297,7 +1297,7 @@
   ./services/networking/mosquitto.nix
   #./services/networking/mozillavpn.nix
   #./services/networking/mptcpd.nix
-  #./services/networking/mstpd.nix
+  ./services/networking/mstpd.nix
   #./services/networking/mtprotoproxy.nix
   #./services/networking/mtr-exporter.nix
   #./services/networking/mullvad-vpn.nix
