@@ -1869,7 +1869,7 @@
   #./services/x11/colord.nix
   ./services/x11/desktop-managers/default.nix
   ./services/x11/display-managers/default.nix
-  #./services/x11/display-managers/lightdm.nix
+  ./services/x11/display-managers/lightdm.nix
   #./services/x11/display-managers/slim.nix
   #./services/x11/display-managers/startx.nix
   #./services/x11/display-managers/sx.nix
