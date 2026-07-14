@@ -224,13 +224,13 @@
   #./programs/fzf.nix
   ./programs/gamemode.nix
   ./programs/gamescope.nix
-  #./programs/gdk-pixbuf.nix
+  ./programs/gdk-pixbuf.nix
   #./programs/geary.nix
   #./programs/ghidra.nix
   #./programs/git-worktree-switcher.nix
   ./programs/git.nix
-  #./programs/gnome-disks.nix
-  #./programs/gnome-terminal.nix
+  ./programs/gnome-disks.nix
+  ./programs/gnome-terminal.nix
   ./programs/gnupg.nix
   #./programs/gpaste.nix
   #./programs/gphoto2.nix
@@ -252,7 +252,7 @@
   #./programs/k40-whisperer.nix
   #./programs/kbdlight.nix
   #./programs/kclock.nix
-  #./programs/kde-pim.nix
+  ./programs/kde-pim.nix
   ./programs/kdeconnect.nix
   #./programs/kubeswitch.nix
   #./programs/ladybird.nix
@@ -282,7 +282,7 @@
   ./programs/nix-ld.nix
   #./programs/nix-required-mounts.nix
   #./programs/nixbit.nix
-  #./programs/nm-applet.nix
+  ./programs/nm-applet.nix
   #./programs/nncp.nix
   #./programs/noisetorch.nix
   #./programs/npm.nix
@@ -293,7 +293,7 @@
   #./programs/oddjobd.nix
   #./programs/opengamepadui.nix
   #./programs/openvpn3.nix
-  #./programs/partition-manager.nix
+  ./programs/partition-manager.nix
   #./programs/pay-respects.nix
   #./programs/plotinus.nix
   #./programs/pmount.nix
@@ -326,7 +326,7 @@
   #./programs/streamcontroller.nix
   #./programs/streamdeck-ui.nix
   #./programs/sysdig.nix
-  #./programs/system-config-printer.nix
+  ./programs/system-config-printer.nix
   #./programs/systemtap.nix
   #./programs/tcpdump.nix
   #./programs/television.nix
@@ -350,7 +350,7 @@
   ./programs/wayland/gtklock.nix
   #./programs/wayland/hyprland.nix
   #./programs/wayland/hyprlock.nix
-  #./programs/wayland/labwc.nix
+  ./programs/wayland/labwc.nix
   #./programs/wayland/mangowc.nix
   #./programs/wayland/miracle-wm.nix
   #./programs/wayland/niri.nix
@@ -358,7 +358,7 @@
   #./programs/wayland/sway.nix
   #./programs/wayland/uwsm.nix
   #./programs/wayland/waybar.nix
-  #./programs/wayland/wayfire.nix
+  ./programs/wayland/wayfire.nix
   #./programs/wayland/wayvnc.nix
   #./programs/weylus.nix
   #./programs/whois.nix
@@ -373,7 +373,7 @@
   #./programs/xscreensaver/sonar.nix
   #./programs/xscreensaver/xscreensaver.nix
   #./programs/xss-lock.nix
-  #./programs/xwayland.nix
+  ./programs/xwayland.nix
   #./programs/yazi.nix
   #./programs/ydotool.nix
   #./programs/yubikey-manager.nix
