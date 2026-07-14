@@ -39,9 +39,9 @@
   ./config/users-groups.nix
   ./config/vte.nix
   ./config/xdg/autostart.nix
-  #./config/xdg/icons.nix
-  #./config/xdg/menus.nix
-  #./config/xdg/mime.nix
+  ./config/xdg/icons.nix
+  ./config/xdg/menus.nix
+  ./config/xdg/mime.nix
   ./config/xdg/portal.nix
   #./config/xdg/portals/lxqt.nix
   #./config/xdg/portals/wlr.nix
