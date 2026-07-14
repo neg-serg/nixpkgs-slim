@@ -80,7 +80,7 @@
   #./hardware/infiniband.nix
   #./hardware/inputmodule.nix
   #./hardware/iosched.nix
-  #./hardware/keyboard/qmk.nix
+  ./hardware/keyboard/qmk.nix
   #./hardware/keyboard/teck.nix
   #./hardware/keyboard/uhk.nix
   #./hardware/keyboard/zsa.nix
