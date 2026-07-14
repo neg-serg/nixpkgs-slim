@@ -25,7 +25,7 @@
   ./config/nsswitch.nix
   #./config/power-management.nix
   #./config/qt.nix
-  #./config/resolvconf.nix
+  ./config/resolvconf.nix
   ./config/shells-environment.nix
   #./config/stevenblack.nix
   ./config/stub-ld.nix
