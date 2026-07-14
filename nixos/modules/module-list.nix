@@ -313,7 +313,7 @@
   #./programs/screen.nix
   ./programs/seahorse.nix
   #./programs/sedutil.nix
-  #./programs/shadow.nix
+  ./programs/shadow.nix
   #./programs/sharing.nix
   #./programs/singularity.nix
   #./programs/skim.nix
