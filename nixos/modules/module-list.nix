@@ -208,7 +208,7 @@
   #./programs/ente-auth.nix
   ./programs/environment.nix
   #./programs/envision.nix
-  #./programs/evince.nix
+  ./programs/evince.nix
   #./programs/extra-container.nix
   #./programs/fcast-receiver.nix
   #./programs/feedbackd.nix
