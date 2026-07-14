@@ -348,7 +348,7 @@
   #./programs/wayland/dms-shell.nix
   #./programs/wayland/dwl.nix
   ./programs/wayland/gtklock.nix
-  #./programs/wayland/hyprland.nix
+  ./programs/wayland/hyprland.nix
   #./programs/wayland/hyprlock.nix
   ./programs/wayland/labwc.nix
   #./programs/wayland/mangowc.nix
