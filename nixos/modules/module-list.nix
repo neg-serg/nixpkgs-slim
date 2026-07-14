@@ -2041,7 +2041,7 @@
   #./virtualisation/openstack-options.nix
   #./virtualisation/openvswitch.nix
   ./virtualisation/parallels-guest.nix
-  #./virtualisation/podman/default.nix
+  ./virtualisation/podman/default.nix
   #./virtualisation/qemu-guest-agent.nix
   #./virtualisation/rosetta.nix
   #./virtualisation/spice-usb-redirection.nix
