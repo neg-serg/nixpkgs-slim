@@ -11,7 +11,7 @@
   #./config/getaddrinfo.nix
   #./config/gtk/gtk-icon-cache.nix
   ./config/i18n.nix
-  #./config/iproute2.nix
+  ./config/iproute2.nix
   #./config/ldap.nix
   ./config/ldso.nix
   ./config/locale.nix
