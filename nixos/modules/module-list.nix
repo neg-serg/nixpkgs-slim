@@ -16,7 +16,7 @@
   ./config/ldso.nix
   ./config/locale.nix
   #./config/malloc.nix
-  #./config/mysql.nix
+  ./config/mysql.nix
   ./config/networking.nix
   ./config/nix-channel.nix
   ./config/nix-flakes.nix
