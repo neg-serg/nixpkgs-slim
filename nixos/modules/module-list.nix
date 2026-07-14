@@ -150,7 +150,7 @@
   ./misc/ids.nix
   #./misc/label.nix
   ./misc/lib.nix
-  #./misc/locate.nix
+  ./misc/locate.nix
   #./misc/man-db.nix
   #./misc/mandoc.nix
   ./misc/meta.nix
