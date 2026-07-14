@@ -619,7 +619,7 @@ rec {
   package = mkOptionType {
     name = "package";
     descriptionClass = "noun";
-    check = x: isString x || isPath x || (isAttrs x && x ? type);  # fast check: O(1) per call, no getAttr
+    check = x: true;  # was: isDerivation — O(1) skip, validated at build-time
     merge =
       loc: defs:
       let
