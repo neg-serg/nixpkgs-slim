@@ -356,7 +356,7 @@
   #./programs/wayland/niri.nix
   #./programs/wayland/river.nix
   #./programs/wayland/sway.nix
-  #./programs/wayland/uwsm.nix
+  ./programs/wayland/uwsm.nix
   #./programs/wayland/waybar.nix
   ./programs/wayland/wayfire.nix
   #./programs/wayland/wayvnc.nix
