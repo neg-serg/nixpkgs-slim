@@ -238,7 +238,7 @@
   #./programs/haguichi.nix
   #./programs/hamster.nix
   #./programs/htop.nix
-  #./programs/i3lock.nix
+  ./programs/i3lock.nix
   #./programs/iay.nix
   #./programs/idescriptor.nix
   #./programs/iftop.nix
