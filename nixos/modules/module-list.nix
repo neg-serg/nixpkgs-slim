@@ -434,7 +434,7 @@
   #./services/audio/goxlr-utility.nix
   #./services/audio/hqplayerd.nix
   #./services/audio/icecast.nix
-  #./services/audio/jack.nix
+  ./services/audio/jack.nix
   #./services/audio/jmusicbot.nix
   #./services/audio/lavalink.nix
   #./services/audio/liquidsoap.nix
