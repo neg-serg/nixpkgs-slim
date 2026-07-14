@@ -406,7 +406,7 @@
   ./security/misc.nix
   #./security/oath.nix
   ./security/pam.nix
-  #./security/pam_mount.nix
+  ./security/pam_mount.nix
   #./security/please.nix
   ./security/polkit.nix
   ./security/rtkit.nix
