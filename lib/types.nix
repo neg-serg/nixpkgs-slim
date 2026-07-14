@@ -619,7 +619,7 @@ rec {
   package = mkOptionType {
     name = "package";
     descriptionClass = "noun";
-    check = x: true;
+    check = x: isDerivation x || isStorePath x;
     merge =
       loc: defs:
       let
