@@ -1308,7 +1308,7 @@
   #./services/networking/nar-serve.nix
   #./services/networking/nat-iptables.nix
   #./services/networking/nat-nftables.nix
-  #./services/networking/nat.nix
+  ./services/networking/nat.nix
   #./services/networking/nats.nix
   #./services/networking/nbd.nix
   #./services/networking/ncdns.nix
