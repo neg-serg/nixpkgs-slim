@@ -625,8 +625,8 @@
   ./services/display-managers/gdm.nix
   ./services/display-managers/generic.nix
   ./services/display-managers/greetd.nix
-  #./services/display-managers/lemurs.nix
-  #./services/display-managers/ly.nix
+  ./services/display-managers/lemurs.nix
+  ./services/display-managers/ly.nix
   ./services/display-managers/plasma-login-manager.nix
   ./services/display-managers/sddm.nix
   #./services/editors/emacs.nix
@@ -1871,9 +1871,9 @@
   ./services/x11/display-managers/default.nix
   #./services/x11/display-managers/lightdm.nix
   #./services/x11/display-managers/slim.nix
-  #./services/x11/display-managers/startx.nix
-  #./services/x11/display-managers/sx.nix
-  #./services/x11/display-managers/xpra.nix
+  ./services/display-managers/startx.nix
+  ./services/display-managers/sx.nix
+  ./services/display-managers/xpra.nix
   #./services/x11/extra-layouts.nix
   #./services/x11/fractalart.nix
   #./services/x11/hardware/digimend.nix
