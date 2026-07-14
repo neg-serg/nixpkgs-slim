@@ -1221,7 +1221,7 @@
   #./services/networking/g3proxy.nix
   #./services/networking/gdomap.nix
   #./services/networking/geph.nix
-  #./services/networking/ghostunnel.nix
+  ./services/networking/ghostunnel.nix
   #./services/networking/git-daemon.nix
   #./services/networking/gns3-server.nix
   #./services/networking/gnunet.nix
