@@ -572,11 +572,11 @@
   ./services/desktops/geoclue2.nix
   #./services/desktops/gnome/at-spi2-core.nix
   #./services/desktops/gnome/evolution-data-server.nix
-  #./services/desktops/gnome/gcr-ssh-agent.nix
+  ./services/desktops/gnome/gcr-ssh-agent.nix
   #./services/desktops/gnome/glib-networking.nix
   #./services/desktops/gnome/gnome-browser-connector.nix
   #./services/desktops/gnome/gnome-initial-setup.nix
-  #./services/desktops/gnome/gnome-keyring.nix
+  ./services/desktops/gnome/gnome-keyring.nix
   #./services/desktops/gnome/gnome-online-accounts.nix
   #./services/desktops/gnome/gnome-online-miners.nix
   #./services/desktops/gnome/gnome-remote-desktop.nix
