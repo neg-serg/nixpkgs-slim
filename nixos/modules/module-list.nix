@@ -257,7 +257,7 @@
   #./programs/kubeswitch.nix
   #./programs/ladybird.nix
   #./programs/lazygit.nix
-  #./programs/less.nix
+  ./programs/less.nix
   #./programs/liboping.nix
   #./programs/librepods.nix
   #./programs/lix.nix
