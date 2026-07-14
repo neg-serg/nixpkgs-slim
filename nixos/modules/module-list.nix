@@ -159,7 +159,7 @@
   ./misc/nixpkgs.nix
   #./misc/passthru.nix
   ./misc/version.nix
-  #./misc/wordlist.nix
+  ./misc/wordlist.nix
   #./programs/_1password-gui.nix
   #./programs/_1password.nix
   #./programs/alvr.nix
