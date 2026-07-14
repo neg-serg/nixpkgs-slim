@@ -557,7 +557,7 @@
   #./services/databases/victorialogs.nix
   #./services/databases/victoriametrics.nix
   #./services/databases/victoriatraces.nix
-  #./services/desktops/accountsservice.nix
+  ./services/desktops/accountsservice.nix
   #./services/desktops/adw-bluetooth.nix
   #./services/desktops/ayatana-indicators.nix
   #./services/desktops/bamf.nix
