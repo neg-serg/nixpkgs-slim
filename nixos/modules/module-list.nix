@@ -94,7 +94,7 @@
   ./hardware/network/ath-user-regd.nix
   ./hardware/network/b43.nix
   #./hardware/network/eg25-manager.nix
-  #./hardware/network/intel-2200bg.nix
+  ./hardware/network/intel-2200bg.nix
   #./hardware/new-lg4ff.nix
   #./hardware/nfc-nci.nix
   #./hardware/nitrokey.nix
