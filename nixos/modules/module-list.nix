@@ -13,7 +13,7 @@
   ./config/i18n.nix
   #./config/iproute2.nix
   #./config/ldap.nix
-  #./config/ldso.nix
+  ./config/ldso.nix
   ./config/locale.nix
   #./config/malloc.nix
   #./config/mysql.nix
