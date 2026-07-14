@@ -440,7 +440,7 @@
   #./services/audio/liquidsoap.nix
   #./services/audio/marytts.nix
   #./services/audio/mopidy.nix
-  #./services/audio/mpd.nix
+  ./services/audio/mpd.nix
   #./services/audio/mpdscribble.nix
   #./services/audio/music-assistant.nix
   #./services/audio/mympd.nix
@@ -1036,7 +1036,7 @@
   #./services/monitoring/grafana-image-renderer.nix
   #./services/monitoring/grafana-reporter.nix
   #./services/monitoring/grafana-to-ntfy.nix
-  #./services/monitoring/grafana.nix
+  ./services/monitoring/grafana.nix
   #./services/monitoring/graphite.nix
   #./services/monitoring/gs1200-exporter.nix
   #./services/monitoring/hdaps.nix
@@ -1054,7 +1054,7 @@
   #./services/monitoring/monit.nix
   #./services/monitoring/munin.nix
   #./services/monitoring/nagios.nix
-  #./services/monitoring/netdata.nix
+  ./services/monitoring/netdata.nix
   #./services/monitoring/nezha-agent.nix
   #./services/monitoring/nezha.nix
   #./services/monitoring/ocsinventory-agent.nix
@@ -1121,7 +1121,7 @@
   #./services/network-filesystems/orangefs/server.nix
   #./services/network-filesystems/rsyncd.nix
   #./services/network-filesystems/samba-wsdd.nix
-  #./services/network-filesystems/samba.nix
+  ./services/network-filesystems/samba.nix
   #./services/network-filesystems/saunafs.nix
   #./services/network-filesystems/tahoe.nix
   #./services/network-filesystems/u9fs.nix
@@ -1377,7 +1377,7 @@
   #./services/networking/realm.nix
   #./services/networking/redsocks.nix
   #./services/networking/reframe.nix
-  #./services/networking/resilio.nix
+  ./services/networking/resilio.nix
   #./services/networking/robustirc-bridge.nix
   #./services/networking/rosenpass.nix
   #./services/networking/routedns.nix
