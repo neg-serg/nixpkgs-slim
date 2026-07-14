@@ -654,7 +654,7 @@
   #./services/games/xonotic.nix
   ./services/hardware/acpid.nix
   #./services/hardware/actkbd.nix
-  #./services/hardware/amdgpu.nix
+  ./services/hardware/amdgpu.nix
   #./services/hardware/argonone.nix
   #./services/hardware/arsenik.nix
   #./services/hardware/asusd.nix
