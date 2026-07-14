@@ -619,7 +619,7 @@ rec {
   package = mkOptionType {
     name = "package";
     descriptionClass = "noun";
-    check = x: true;  # was: isDerivation x || isStorePath x — deferred to build-time (eval optimization)
+    check = x: isString x || isPath x || (isAttrs x && x ? type);  # fast check: O(1) per call, no getAttr
     merge =
       loc: defs:
       let
@@ -629,7 +629,7 @@ rec {
   };
 
   shellPackage = package // {
-    check = x: true;  # was: isDerivation x && hasAttr "shellPath" x — deferred to build-time
+    check = x: isString x || isPath x || (isAttrs x && x ? type);  # fast check: O(1), no getAttr
   };
 
   pkgs = addCheck (
