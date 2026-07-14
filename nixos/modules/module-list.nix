@@ -594,7 +594,7 @@
   ./services/desktops/pipewire/pipewire.nix
   ./services/desktops/pipewire/wireplumber.nix
   #./services/desktops/playerctld.nix
-  #./services/desktops/profile-sync-daemon.nix
+  ./services/desktops/profile-sync-daemon.nix
   ./services/desktops/seatd.nix
   #./services/desktops/system76-scheduler.nix
   #./services/desktops/system-config-printer.nix
@@ -849,7 +849,7 @@
   #./services/misc/conman.nix
   #./services/misc/cpuminer-cryptonight.nix
   #./services/misc/db-rest.nix
-  #./services/misc/devmon.nix
+  ./services/misc/devmon.nix
   #./services/misc/devpi-server.nix
   #./services/misc/dictd.nix
   #./services/misc/disnix.nix
@@ -1082,7 +1082,7 @@
   #./services/monitoring/scrutiny.nix
   ./services/monitoring/smartd.nix
   #./services/monitoring/snmpd.nix
-  #./services/monitoring/sysstat.nix
+  ./services/monitoring/sysstat.nix
   #./services/monitoring/teamviewer.nix
   #./services/monitoring/telegraf.nix
   #./services/monitoring/thanos.nix
@@ -1130,7 +1130,7 @@
   #./services/network-filesystems/yandex-disk.nix
   #./services/networking/3proxy.nix
   #./services/networking/acme-dns.nix
-  #./services/networking/adguardhome.nix
+  ./services/networking/adguardhome.nix
   #./services/networking/alice-lg.nix
   #./services/networking/amuled.nix
   #./services/networking/anubis.nix
