@@ -44,7 +44,7 @@
   ./config/xdg/mime.nix
   ./config/xdg/portal.nix
   #./config/xdg/portals/lxqt.nix
-  #./config/xdg/portals/wlr.nix
+  ./config/xdg/portals/wlr.nix
   #./config/xdg/sounds.nix
   #./config/xdg/terminal-exec.nix
   ./config/zram.nix
