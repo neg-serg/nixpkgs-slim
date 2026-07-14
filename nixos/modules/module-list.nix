@@ -762,6 +762,7 @@
   #./services/logging/SystemdJournal2Gelf.nix
   #./services/logging/ulogd.nix
   #./services/logging/vector.nix
+  ./services/mail/mail.nix
   #./services/mail/automx2.nix
   #./services/mail/cyrus-imap.nix
   #./services/mail/davmail.nix
