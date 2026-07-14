@@ -404,7 +404,7 @@
   ./security/krb5
   ./security/lock-kernel-modules.nix
   ./security/misc.nix
-  #./security/oath.nix
+  ./security/oath.nix
   ./security/pam.nix
   ./security/pam_mount.nix
   #./security/please.nix
