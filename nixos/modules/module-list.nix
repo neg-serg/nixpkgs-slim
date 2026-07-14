@@ -211,7 +211,7 @@
   ./programs/evince.nix
   #./programs/extra-container.nix
   #./programs/fcast-receiver.nix
-  #./programs/feedbackd.nix
+  ./programs/feedbackd.nix
   #./programs/firefox.nix
   ./programs/firejail.nix
   #./programs/fish.nix
@@ -311,7 +311,7 @@
   #./programs/ryzen-monitor-ng.nix
   #./programs/schroot.nix
   #./programs/screen.nix
-  #./programs/seahorse.nix
+  ./programs/seahorse.nix
   #./programs/sedutil.nix
   #./programs/shadow.nix
   #./programs/sharing.nix
@@ -331,7 +331,7 @@
   #./programs/tcpdump.nix
   #./programs/television.nix
   #./programs/throne.nix
-  #./programs/thunar.nix
+  ./programs/thunar.nix
   #./programs/thunderbird.nix
   ./programs/tmux.nix
   #./programs/traceroute.nix
@@ -347,7 +347,7 @@
   #./programs/wavemon.nix
   #./programs/wayland/dms-shell.nix
   #./programs/wayland/dwl.nix
-  #./programs/wayland/gtklock.nix
+  ./programs/wayland/gtklock.nix
   #./programs/wayland/hyprland.nix
   #./programs/wayland/hyprlock.nix
   #./programs/wayland/labwc.nix
@@ -366,7 +366,7 @@
   #./programs/wireshark.nix
   #./programs/wshowkeys.nix
   #./programs/xastir.nix
-  #./programs/xfconf.nix
+  ./programs/xfconf.nix
   #./programs/xfs_quota.nix
   #./programs/xonsh.nix
   #./programs/xppen.nix
