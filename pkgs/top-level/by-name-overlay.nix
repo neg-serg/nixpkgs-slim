@@ -123,6 +123,7 @@ let
     exfatprogs = null;
     exiv2 = null;
     exo = null;
+    expand-response-params = null;
     expat = null;
     eza = null;
     fastfetch = null;
