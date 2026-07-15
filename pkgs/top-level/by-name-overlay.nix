@@ -25,7 +25,7 @@ let
   # Whitelist: config-referenced packages + all transitive build dependencies from pkgs/by-name/
   # Total: 1914 packages (out of ~21,388 in pkgs/by-name/)
   # Only applies when baseDirectory is the main pkgs/by-name/
-  whitelist =
+  whitelist = {
     OVMF-xen = null;
     SDL2_gfx = null;
     SDL2_image = null;
