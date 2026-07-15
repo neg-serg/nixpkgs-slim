@@ -10,7 +10,7 @@ let
     else mapAttrs (name: _: baseDirectory + "/${shard}/${name}/package.nix") (readDir (baseDirectory + "/${shard}"));
   packageFiles = mergeAttrsList (mapAttrsToList namesForShard (readDir baseDirectory));
   isMainByname = lib.hasSuffix "/pkgs/by-name" (builtins.toString baseDirectory);
-  # Whitelist: 5220 packages (out of ~21,388)
+  # Whitelist: 5221 packages (out of ~21,388 in pkgs/by-name/)
   whitelist = {
     OVMF-xen = null;
     SDL2_gfx = null;
@@ -53,6 +53,7 @@ let
     activemq = null;
     actkbd = null;
     actool = null;
+    ada = null;
     adaptivecpp = null;
     adcli = null;
     addBinToPathHook = null;
