@@ -3037,6 +3037,7 @@ let
     metis = null;
     mgba = null;
     micro = null;
+    microcode-amd = null;
     microsoft-gsl = null;
     microsoft-identity-broker = null;
     mihomo = null;
