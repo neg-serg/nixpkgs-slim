@@ -1,58 +1,499 @@
-# This file turns the pkgs/by-name directory (see its README.md for more info) into an overlay that adds all the defined packages.
-# No validity checks are done here,
-# instead this file is optimised for performance,
-# and validity checks are done by CI on PRs.
+# This file is a MODIFIED version of the nixpkgs by-name-overlay.
+# It only calls callPackage for packages in the whitelist (those actually used by /etc/nixos),
+# saving ~21,000 unnecessary callPackage invocations during eval.
+# Whitelist auto-generated based on pkgs.* references in the config.
 
-# Type: Path -> Overlay
 baseDirectory:
 let
-  # Because of Nix's import-value cache, importing lib is free
   lib = import ../../lib;
+  inherit (builtins) readDir;
+  inherit (lib.attrsets) mapAttrs mapAttrsToList mergeAttrsList filterAttrs;
+  inherit (lib.trivial) flip;
 
-  inherit (builtins)
-    readDir
-    ;
+  namesForShard = shard: type:
+    if type != "directory" then { }
+    else mapAttrs (name: _: baseDirectory + "/${shard}/${name}/package.nix") (readDir (baseDirectory + "/${shard}"));
 
-  inherit (lib.attrsets)
-    mapAttrs
-    mapAttrsToList
-    mergeAttrsList
-    ;
-
-  inherit (lib.trivial)
-    flip
-    ;
-
-  # Package files for a single shard
-  # Type: String -> String -> AttrsOf Path
-  namesForShard =
-    shard: type:
-    if type != "directory" then
-      # Ignore all non-directories. Technically only README.md is allowed as a file in the base directory, so we could alternatively:
-      # - Assume that README.md is the only file and change the condition to `shard == "README.md"` for a minor performance improvement.
-      #   This would however cause very poor error messages if there's other files.
-      # - Ensure that README.md is the only file, throwing a better error message if that's not the case.
-      #   However this would make for a poor code architecture, because one type of error would have to be duplicated in the validity checks and here.
-      # Additionally in either of those alternatives, we would have to duplicate the hardcoding of "README.md"
-      { }
-    else
-      mapAttrs (name: _: baseDirectory + "/${shard}/${name}/package.nix") (
-        readDir (baseDirectory + "/${shard}")
-      );
-
-  # The attribute set mapping names to the package files defining them
-  # This is defined up here in order to allow reuse of the value (it's kind of expensive to compute)
-  # if the overlay has to be applied multiple times
   packageFiles = mergeAttrsList (mapAttrsToList namesForShard (readDir baseDirectory));
+
+  # Whitelist: packages actually used by the NixOS config + required build dependencies
+  # Config packages auto-generated from: grep -roh 'pkgs\.[a-zA-Z_0-9-]*' /etc/nixos/modules/ /etc/nixos/hosts/ --include='*.nix'
+  # Build deps added manually for common build tools (bison, gnum4, meson, etc.)
+  # that live in pkgs/by-name/ and are needed as transitive build dependencies.
+  whitelist = {
+    abduco = null;
+    abuse = null;
+    acpi = null;
+    adguardian = null;
+    advancecomp = null;
+    adw-gtk3 = null;
+    age = null;
+    airshipper = null;
+    aliae = null;
+    alsa-tools = null;
+    alsa-utils = null;
+    alure = null;
+    amdgpu_top = null;
+    amnezia-vpn = null;
+    amneziawg-go = null;
+    amneziawg-tools = null;
+    angband = null;
+    antiword = null;
+    apparmor-profiles = null;
+    apparmor-utils = null;
+    aria2 = null;
+    asciinema = null;
+    asciinema-agg = null;
+    atop = null;
+    autoconf-archive = null;
+    axel = null;
+    bandwhich = null;
+    bash-completion = null;
+    bat = null;
+    bc = null;
+    beets = null;
+    below = null;
+    bison = null;
+    blas = null;
+    blender = null;
+    blesh = null;
+    blktrace = null;
+    bluetui = null;
+    bluez-tools = null;
+    bottles = null;
+    bpftrace = null;
+    brightnessctl = null;
+    brogue-ce = null;
+    broot = null;
+    brutefir = null;
+    btop = null;
+    cacert = null;
+    cached-nix-shell = null;
+    camilladsp = null;
+    carapace = null;
+    catppuccin-kvantum = null;
+    cava = null;
+    ccache = null;
+    chafa = null;
+    choose = null;
+    cider = null;
+    cliphist = null;
+    cmake = null;
+    convmv = null;
+    coppwr = null;
+    corectrl = null;
+    crawl = null;
+    cryptsetup = null;
+    curlie = null;
+    darktable = null;
+    dart-sass = null;
+    dash = null;
+    dcfldd = null;
+    ddccontrol = null;
+    ddcutil = null;
+    deadnix = null;
+    delta = null;
+    diff-so-fancy = null;
+    direnv = null;
+    distrobox = null;
+    dmidecode = null;
+    doggo = null;
+    dool = null;
+    dos2unix = null;
+    dosbox-staging = null;
+    dosbox-x = null;
+    dotacat = null;
+    doxygen = null;
+    dr14_tmeter = null;
+    dualsensectl = null;
+    dunst = null;
+    dust = null;
+    efibootmgr = null;
+    efivar = null;
+    eigen = null;
+    endless-sky = null;
+    entr = null;
+    epr = null;
+    erdtree = null;
+    espanso = null;
+    essentia-extractor = null;
+    ethtool = null;
+    evhz = null;
+    exfat = null;
+    exfatprogs = null;
+    exiv2 = null;
+    exo = null;
+    expat = null;
+    eza = null;
+    fastfetch = null;
+    fclones = null;
+    fd = null;
+    ffmpegthumbnailer = null;
+    fheroes2 = null;
+    figlet = null;
+    fio = null;
+    firejail = null;
+    flare = null;
+    flashrom = null;
+    flatpak = null;
+    fortune = null;
+    fping = null;
+    freerdp = null;
+    freetype = null;
+    fzf = null;
+    gamemode = null;
+    gamescope = null;
+    gdb = null;
+    gdbm = null;
+    gdk-pixbuf = null;
+    geoip = null;
+    gh = null;
+    gist = null;
+    git = null;
+    git-crypt = null;
+    git-extras = null;
+    git-lfs = null;
+    glib = null;
+    gnome-bluetooth = null;
+    gnum4 = null;
+    gnumake = null;
+    gnuchess = null;
+    gnutar = null;
+    goaccess = null;
+    goimapnotify = null;
+    gopass = null;
+    gptfdisk = null;
+    graphene = null;
+    graphviz = null;
+    grim = null;
+    grimblast = null;
+    groff = null;
+    grpc = null;
+    gtk4 = null;
+    gzdoom = null;
+    handlr = null;
+    harfbuzz = null;
+    help2man = null;
+    herdr = null;
+    himalaya = null;
+    hishtory = null;
+    htmlq = null;
+    httpstat = null;
+    hunspell = null;
+    hwatch = null;
+    hwinfo = null;
+    hxtools = null;
+    hyperfine = null;
+    hyprcursor = null;
+    hypridle = null;
+    hyprland = null;
+    hyprland-qt-support = null;
+    hyprland-qtutils = null;
+    hyprlock = null;
+    hyprpicker = null;
+    hyprpolkitagent = null;
+    hyprprop = null;
+    hyprutils = null;
+    id3v2 = null;
+    iftop = null;
+    imagemagick = null;
+    inetutils = null;
+    inotify-tools = null;
+    inxi = null;
+    ioping = null;
+    iotop = null;
+    ipcalc = null;
+    iperf2 = null;
+    iproute2 = null;
+    ipset = null;
+    iptables = null;
+    isync = null;
+    iverilog = null;
+    iwd = null;
+    iwmenu = null;
+    jamesdsp = null;
+    jazz2 = null;
+    jpegoptim = null;
+    jq = null;
+    just = null;
+    kanata = null;
+    kexec-tools = null;
+    khal = null;
+    kitty = null;
+    kitty-img = null;
+    kmon = null;
+    kora-icon-theme = null;
+    kyotocabinet = null;
+    lapack = null;
+    lbzip2 = null;
+    libadwaita = null;
+    libdrm = null;
+    libmpc = null;
+    libnotify = null;
+    libpng = null;
+    libtiff = null;
+    libxslt = null;
+    lm_sensors = null;
+    lnav = null;
+    lowdown = null;
+    lshw = null;
+    lsof = null;
+    lsp-plugins = null;
+    lutgen = null;
+    lxc = null;
+    lz4 = null;
+    makeDBusConf = null;
+    mangohud = null;
+    manix = null;
+    marksman = null;
+    massren = null;
+    material-symbols = null;
+    matugen = null;
+    mediainfo = null;
+    media-player-info = null;
+    memtester = null;
+    meson = null;
+    minicom = null;
+    mpc = null;
+    mpdas = null;
+    mpdris2 = null;
+    mpfr = null;
+    mpv = null;
+    mpvc = null;
+    mpv-unwrapped = null;
+    msmtp = null;
+    mtools = null;
+    mtr = null;
+    multipath-tools = null;
+    ncpamixer = null;
+    neo = null;
+    neo-cowsay = null;
+    neomutt = null;
+    neovim-remote = null;
+    netcdf = null;
+    netcat-openbsd = null;
+    nethack = null;
+    nethogs = null;
+    networkmanager = null;
+    nh = null;
+    ninja = null;
+    nix-bash-completions = null;
+    nix-direnv = null;
+    nix-fast-build = null;
+    nixfmt = null;
+    nix-init = null;
+    nix-melt = null;
+    nixos-shell = null;
+    nix-output-monitor = null;
+    nix-your-shell = null;
+    nix-zsh-completions = null;
+    nms = null;
+    nnn = null;
+    noisetorch = null;
+    noto-fonts = null;
+    noto-fonts-cjk-sans = null;
+    noto-fonts-color-emoji = null;
+    npins = null;
+    ntfs3g = null;
+    nuspell = null;
+    nvd = null;
+    nvme-cli = null;
+    obsidian = null;
+    oh-my-posh = null;
+    oils-for-unix = null;
+    ollama = null;
+    oniguruma = null;
+    opencode = null;
+    openldap = null;
+    openmw = null;
+    openocd = null;
+    openrgb = null;
+    opensc = null;
+    opensoundmeter = null;
+    optipng = null;
+    os-prober = null;
+    ostree = null;
+    ouch = null;
+    p11-kit = null;
+    p7zip = null;
+    pamixer = null;
+    pango = null;
+    papirus-icon-theme = null;
+    par = null;
+    parallel = null;
+    parted = null;
+    pass-git-helper = null;
+    pastel = null;
+    pbzip2 = null;
+    pcem = null;
+    pciutils = null;
+    pcre = null;
+    pcsc-tools = null;
+    pcsx2 = null;
+    perf = null;
+    picard = null;
+    pi-coding-agent = null;
+    pigz = null;
+    playerctl = null;
+    plocate = null;
+    pngquant = null;
+    powertop = null;
+    prettyping = null;
+    procdump = null;
+    progress = null;
+    proton-ge-bin = null;
+    protontricks = null;
+    proxychains = null;
+    psmisc = null;
+    pulseaudio = null;
+    pup = null;
+    pv = null;
+    pwgen = null;
+    pw-volume = null;
+    pwvucontrol = null;
+    pzip = null;
+    qmk-udev-rules = null;
+    qrencode = null;
+    quickshell = null;
+    rawtherapee = null;
+    raysession = null;
+    read-edid = null;
+    realesrgan-ncnn-vulkan = null;
+    re2c = null;
+    redsocks = null;
+    reptyr = null;
+    rescrobbled = null;
+    resvg = null;
+    retroarch-assets = null;
+    retroarch-joypad-autoconfig = null;
+    rewrk = null;
+    ripgrep = null;
+    rlwrap = null;
+    rmlint = null;
+    rmpc = null;
+    rnnoise = null;
+    rnnoise-plugin = null;
+    roddhjav-apparmor-rules = null;
+    rsync = null;
+    rustmission = null;
+    rygel = null;
+    satty = null;
+    scc = null;
+    scdl = null;
+    schedtool = null;
+    scons = null;
+    scrcpy = null;
+    shattered-pixel-dungeon = null;
+    shfmt = null;
+    sing-box = null;
+    sioyek = null;
+    slurp = null;
+    smartmontools = null;
+    socat = null;
+    sonic-visualiser = null;
+    sops = null;
+    sox = null;
+    spicetify-cli = null;
+    spotify = null;
+    spotifyd = null;
+    sshpass = null;
+    ssh-to-age = null;
+    statix = null;
+    steam = null;
+    stow = null;
+    strace = null;
+    sudo = null;
+    superfile = null;
+    swaybg = null;
+    swayimg = null;
+    sysstat = null;
+    tailscale = null;
+    taoup = null;
+    tcptraceroute = null;
+    tdl = null;
+    tealdeer = null;
+    terminus_font = null;
+    throne = null;
+    tig = null;
+    toilet = null;
+    tomb = null;
+    traceroute = null;
+    transmission_4 = null;
+    udiskie = null;
+    ugrep = null;
+    unar = null;
+    unflac = null;
+    unrar-wrapper = null;
+    unscd = null;
+    unzip = null;
+    upower = null;
+    urlscan = null;
+    usbutils = null;
+    util-linux = null;
+    uwsm = null;
+    vapoursynth = null;
+    vicinae = null;
+    virtiofsd = null;
+    virt-manager = null;
+    vivaldi = null;
+    vkbasalt = null;
+    vkbasalt-cli = null;
+    vmtouch = null;
+    vnstat = null;
+    voxinput = null;
+    vulkan-tools = null;
+    w3m = null;
+    warpd = null;
+    wavemon = null;
+    waves = null;
+    waypipe = null;
+    wayvnc = null;
+    wesnoth = null;
+    wev = null;
+    wf-recorder = null;
+    wget = null;
+    wget2 = null;
+    which = null;
+    whois = null;
+    wireguard-tools = null;
+    wirelesstools = null;
+    wireplumber = null;
+    wl-clipboard = null;
+    wl-clip-persist = null;
+    wlr-which-key = null;
+    wofi = null;
+    wrk2 = null;
+    wtype = null;
+    xaos = null;
+    xdg-desktop-portal-shana = null;
+    xdg-ninja = null;
+    xdg-utils = null;
+    xh = null;
+    xray = null;
+    xxh = null;
+    yabridge = null;
+    yabridgectl = null;
+    yazi = null;
+    ydotool = null;
+    yq-go = null;
+    yt-dlp = null;
+    yubikey-agent = null;
+    yubikey-manager = null;
+    yubikey-personalization = null;
+    zeroad = null;
+    zfxtop = null;
+    zinit = null;
+    zip = null;
+    zk = null;
+    zoxide = null;
+    zsh = null;
+  };
+  
+  # Only include packages in the whitelist — saves ~21,000 callPackage calls
+  filteredPackageFiles = filterAttrs (name: _: whitelist ? ${name}) packageFiles;
 in
 self: super:
 {
-  # This attribute is necessary to allow CI to ensure that all packages defined in `pkgs/by-name`
-  # don't have an overriding definition in `all-packages.nix` with an empty (`{ }`) second `callPackage` argument.
-  # It achieves that with an overlay that modifies both `callPackage` and this attribute to signal whether `callPackage` is used
-  # and whether it's defined by this file here or `all-packages.nix`.
-  # TODO: This can be removed once `pkgs/by-name` can handle custom `callPackage` arguments without `all-packages.nix` (or any other way of achieving the same result).
-  # Because at that point the code in ./stage.nix can be changed to not allow definitions in `all-packages.nix` to override ones from `pkgs/by-name` anymore and throw an error if that happens instead.
   _internalCallByNamePackageFile = flip self.callPackage { };
 }
-// mapAttrs (name: self._internalCallByNamePackageFile) packageFiles
+// mapAttrs (name: self._internalCallByNamePackageFile) filteredPackageFiles
