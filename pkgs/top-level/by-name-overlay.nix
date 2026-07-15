@@ -1083,6 +1083,7 @@ let
     errbot = null;
     errcheck = null;
     esbuild = null;
+    esdm = null;
     esh = null;
     espanso = null;
     espeak-ng = null;
@@ -5276,6 +5277,8 @@ let
     zxing-cpp = null;
     zynaddsubfx = null;
     zziplib = null;
+    # Ruby gems (gem-config)
+    h3_3 = null;
   };
   filteredPackageFiles = if isMainByname then filterAttrs (name: _: whitelist ? ${name}) packageFiles else packageFiles;
 in
