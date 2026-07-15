@@ -17,9 +17,15 @@ let
 
   packageFiles = mergeAttrsList (mapAttrsToList namesForShard (readDir baseDirectory));
 
+  # Only apply the whitelist filter for the main pkgs/by-name directory.
+  # TCL, Darwin, and other by-name package sets use this same overlay
+  # and should not be filtered.
+  isMainByname = lib.hasSuffix "/pkgs/by-name" (builtins.toString baseDirectory);
+
   # Whitelist: config-referenced packages + all transitive build dependencies from pkgs/by-name/
   # Total: 1914 packages (out of ~21,388 in pkgs/by-name/)
-  whitelist = {
+  # Only applies when baseDirectory is the main pkgs/by-name/
+  whitelist =
     OVMF-xen = null;
     SDL2_gfx = null;
     SDL2_image = null;
@@ -1939,8 +1945,9 @@ let
     zziplib = null;
   };
   
-  # Only include packages in the whitelist — saves ~19,000 callPackage calls
-  filteredPackageFiles = filterAttrs (name: _: whitelist ? ${name}) packageFiles;
+  # Only include packages in the whitelist for the main pkgs/by-name/ — saves ~19,000 callPackage calls
+  # For other by-name directories (TCL, Darwin), include all packages
+  filteredPackageFiles = if isMainByname then filterAttrs (name: _: whitelist ? ${name}) packageFiles else packageFiles;
 in
 self: super:
 {
