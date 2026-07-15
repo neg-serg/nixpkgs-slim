@@ -3951,6 +3951,7 @@ let
     quicktun = null;
     quickwit = null;
     quiet = null;
+    quirc = null;
     quilt = null;
     r53-ddns = null;
     rabbitmq-c = null;
