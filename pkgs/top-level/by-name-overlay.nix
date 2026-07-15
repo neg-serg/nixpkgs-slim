@@ -5031,6 +5031,8 @@ let
     xapp-symbolic-icons = null;
     xar = null;
     xash3d-fwgs = null;
+    xavs = null;
+    xavs2 = null;
     xastir = null;
     xauth = null;
     xautolock = null;
@@ -5066,6 +5068,8 @@ let
     xen = null;
     xercesc = null;
     xeus = null;
+    xevd = null;
+    xeve = null;
     xeus-zmq = null;
     xev = null;
     xeyes = null;
@@ -5149,6 +5153,7 @@ let
     xwayland = null;
     xwin = null;
     xwininfo = null;
+    xz = null;
     xxdiff = null;
     xxh = null;
     xxhash = null;
@@ -5243,6 +5248,7 @@ let
     zsh = null;
     zsh-autosuggestions = null;
     zsh-syntax-highlighting = null;
+    zvbi = null;
     zsync2 = null;
     zulip = null;
     zuo = null;
