@@ -47,6 +47,7 @@ let
     asciinema-agg = null;
     atop = null;
     autoconf-archive = null;
+    autoreconfHook = null;
     axel = null;
     bandwhich = null;
     bash-completion = null;
