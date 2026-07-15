@@ -1822,6 +1822,7 @@ let
     hyprpicker = null;
     hyprpolkitagent = null;
     hyprprop = null;
+    hyprtoolkit = null;
     hyprutils = null;
     hyprwayland-scanner = null;
     hyprwire = null;
