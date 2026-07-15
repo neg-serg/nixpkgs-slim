@@ -13,6 +13,7 @@ let
   # Whitelist: 5223 packages (out of ~21,388 in pkgs/by-name/)
   whitelist = {
     OVMF-xen = null;
+    mosh = null;
     SDL2_gfx = null;
     SDL2_image = null;
     SDL2_mixer = null;
