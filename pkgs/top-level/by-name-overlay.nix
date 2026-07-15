@@ -1908,6 +1908,7 @@ let
     intel-ipsec-mb = null;
     intel-llvm = null;
     intel-media-driver = null;
+    intel-media-sdk = null;
     intel-npu-driver = null;
     intel-vaapi-driver = null;
     intersphinx-registry = null;
