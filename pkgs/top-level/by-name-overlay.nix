@@ -123,6 +123,7 @@ let
     amdgpu_top = null;
     amf = null;
     amf-headers = null;
+    amdenc = null;
     amiri = null;
     aml = null;
     amnezia-vpn = null;
