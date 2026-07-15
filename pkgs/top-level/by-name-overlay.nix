@@ -3317,6 +3317,7 @@ let
     nixl = null;
     nixops-dns = null;
     nixos-anywhere = null;
+    nixos-build-vms = null;
     nixos-container = null;
     nixos-enter = null;
     nixos-facter = null;
