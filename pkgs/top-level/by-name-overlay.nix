@@ -857,6 +857,7 @@ let
     libexif = null;
     libfaketime = null;
     libfastjson = null;
+    libffiReal = null;
     libfido2 = null;
     libfishsound = null;
     libfm = null;
