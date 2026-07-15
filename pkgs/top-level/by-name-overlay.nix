@@ -1254,6 +1254,7 @@ let
     forgejo-runner = null;
     form = null;
     formatter = null;
+    fortify-headers = null;
     fortune = null;
     fosrl-gerbil = null;
     foss-flame = null;
