@@ -61,6 +61,7 @@ let
     blesh = null;
     blktrace = null;
     bluetui = null;
+    bluez-headers = null;
     bluez-tools = null;
     bottles = null;
     bpftrace = null;
