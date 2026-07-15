@@ -48,6 +48,7 @@ let
     addDriverRunpath = null;
     addons = null;
     adguardian = null;
+    adguardhome = null;
     adios2 = null;
     adns = null;
     adslib = null;
