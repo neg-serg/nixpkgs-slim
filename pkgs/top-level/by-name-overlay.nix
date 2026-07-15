@@ -2565,6 +2565,7 @@ let
     libqxp = null;
     libraqm = null;
     libraspberrypi = null;
+    libratbag = null;
     libraw = null;
     libraw1394 = null;
     librclone = null;
