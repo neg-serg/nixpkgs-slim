@@ -2004,6 +2004,7 @@ let
     jitsi-meet = null;
     jitsi-meet-prosody = null;
     jitsi-videobridge = null;
+    jitterentropy = null;
     jmespath = null;
     jogl = null;
     jonquil = null;
