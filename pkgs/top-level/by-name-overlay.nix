@@ -1539,6 +1539,7 @@ let
     rnnoise-plugin = null;
     robin-map = null;
     roc-toolkit = null;
+    rocksdb = null;
     roddhjav-apparmor-rules = null;
     rolldown = null;
     ronn = null;
