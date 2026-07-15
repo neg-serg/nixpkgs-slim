@@ -1,6 +1,4 @@
-# This file is a MODIFIED version of the nixpkgs by-name-overlay.
-# Whitelist: ALL packages needed by /etc/nixos + transitive deps
-# Computed via recursive closure analysis of ALL by-name + NixOS module refs
+# Modified by-name overlay with whitelist for eval performance
 baseDirectory:
 let
   lib = import ../../lib;
@@ -12,7 +10,7 @@ let
     else mapAttrs (name: _: baseDirectory + "/${shard}/${name}/package.nix") (readDir (baseDirectory + "/${shard}"));
   packageFiles = mergeAttrsList (mapAttrsToList namesForShard (readDir baseDirectory));
   isMainByname = lib.hasSuffix "/pkgs/by-name" (builtins.toString baseDirectory);
-  # Whitelist: 4828 packages (out of ~21,388 in pkgs/by-name/)
+  # Whitelist: 4829 packages
   whitelist = {
     OVMF-xen = null;
     SDL2_gfx = null;
@@ -340,7 +338,6 @@ let
     bogofilter = null;
     bold = null;
     bolt = null;
-    boost-build = null;
     bonmin = null;
     boolector = null;
     boomerang = null;
@@ -3071,6 +3068,7 @@ let
     nixos-firewall-tool = null;
     nixos-grub2-theme = null;
     nixos-icons = null;
+    nixos-init = null;
     nixos-install = null;
     nixos-install-tools = null;
     nixos-option = null;
