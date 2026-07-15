@@ -178,6 +178,7 @@ let
     arguments = null;
     argyllcms = null;
     aria2 = null;
+    aribb24 = null;
     armadillo = null;
     armagetronad = null;
     armips = null;
