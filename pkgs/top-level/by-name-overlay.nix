@@ -4700,6 +4700,7 @@ let
     tzpfms = null;
     u9fs = null;
     uasm = null;
+    uavs3d = null;
     ubertooth = null;
     ubi_reader = null;
     ubports-click = null;
