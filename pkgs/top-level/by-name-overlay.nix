@@ -2016,6 +2016,7 @@ let
     jpegexiforient = null;
     jpegoptim = null;
     jq = null;
+    jre-generate-cacerts = null;
     jrl-cmakemodules = null;
     jshon = null;
     json-glib = null;
