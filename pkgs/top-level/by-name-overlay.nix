@@ -2171,6 +2171,7 @@ let
     libarchive = null;
     libarchive-qt = null;
     libargon2 = null;
+    libaribcaption = null;
     libargs = null;
     libass = null;
     libassuan = null;
