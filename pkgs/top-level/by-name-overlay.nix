@@ -2089,6 +2089,7 @@ let
     kubo-fs-repo-migrations = null;
     kubo-migrator-unwrapped = null;
     kulala-core = null;
+    kvazaar = null;
     kyotocabinet = null;
     kytea = null;
     kyua = null;
