@@ -44,6 +44,7 @@ let
     apparmor-utils = null;
     aria2 = null;
     asciinema = null;
+    audit = null;
     asciinema-agg = null;
     atop = null;
     autoconf-archive = null;
