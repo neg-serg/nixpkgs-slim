@@ -2376,6 +2376,7 @@ let
     libigl = null;
     libigloo = null;
     libiio = null;
+    libilbc = null;
     libilbm = null;
     libimagequant = null;
     libime = null;
