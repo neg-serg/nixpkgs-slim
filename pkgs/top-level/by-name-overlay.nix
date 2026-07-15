@@ -340,6 +340,7 @@ let
     bogofilter = null;
     bold = null;
     bolt = null;
+    boost-build = null;
     bonmin = null;
     boolector = null;
     boomerang = null;
