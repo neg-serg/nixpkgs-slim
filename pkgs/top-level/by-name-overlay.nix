@@ -1379,6 +1379,7 @@ let
     ouch = null;
     p11-kit = null;
     p7zip = null;
+    pahole = null;
     packet = null;
     page = null;
     palette = null;
