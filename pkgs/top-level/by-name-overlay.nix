@@ -4342,6 +4342,7 @@ let
     socat = null;
     soci = null;
     sockdump = null;
+    sof-firmware = null;
     sofia_sip = null;
     softhsm = null;
     sogo = null;
