@@ -257,6 +257,7 @@ let
     memtester = null;
     meson = null;
     minicom = null;
+    minizip = null;
     mpc = null;
     mpdas = null;
     mpdris2 = null;
