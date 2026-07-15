@@ -160,6 +160,7 @@ let
     gnome-bluetooth = null;
     gnum4 = null;
     gnumake = null;
+    gnulib = null;
     gnuchess = null;
     gnu-config = null;
     gnutar = null;
