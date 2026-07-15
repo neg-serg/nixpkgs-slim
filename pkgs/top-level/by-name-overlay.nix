@@ -3053,6 +3053,7 @@ let
     miniz = null;
     minizip = null;
     minizip-ng = null;
+    minizip-ng-compat = null;
     mint-artwork = null;
     mint-cursor-themes = null;
     mint-themes = null;
