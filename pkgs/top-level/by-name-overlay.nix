@@ -233,11 +233,15 @@ let
     lapack = null;
     lbzip2 = null;
     libadwaita = null;
+    libcap = null;
     libdrm = null;
     libmpc = null;
     libnotify = null;
     libpng = null;
     libredirect = null;
+    libselinux = null;
+    libsemanage = null;
+    libsepol = null;
     libtiff = null;
     libxslt = null;
     lm_sensors = null;
