@@ -235,6 +235,7 @@ let
     libmpc = null;
     libnotify = null;
     libpng = null;
+    libredirect = null;
     libtiff = null;
     libxslt = null;
     lm_sensors = null;
