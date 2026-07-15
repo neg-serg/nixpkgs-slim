@@ -4539,6 +4539,7 @@ let
     tempo = null;
     temporal = null;
     temporal-cli = null;
+    temporal_capi = null;
     tenacity = null;
     termbox = null;
     termcap = null;
