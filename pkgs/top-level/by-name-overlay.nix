@@ -129,6 +129,10 @@ let
     avahi = null;
     avro-c = null;
     avro-cpp = null;
+    awsebcli = null;
+    awscli = null;
+    awscli2 = null;
+    aws-sdk-cpp = null;
     axel = null;
     ayatana-ido = null;
     azmq = null;
