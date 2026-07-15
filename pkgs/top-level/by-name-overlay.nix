@@ -39,6 +39,7 @@ let
     amneziawg-tools = null;
     angband = null;
     antiword = null;
+    apple-sdk = null;
     apparmor-profiles = null;
     apparmor-utils = null;
     aria2 = null;
