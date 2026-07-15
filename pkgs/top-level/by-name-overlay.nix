@@ -4790,6 +4790,7 @@ let
     uucp = null;
     uutils-coreutils = null;
     uv = null;
+    uvwasi = null;
     uwimap = null;
     uwsgi = null;
     uwsm = null;
