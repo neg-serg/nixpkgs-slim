@@ -4877,6 +4877,7 @@ let
     vmtouch = null;
     vnstat = null;
     vo-aacenc = null;
+    vo-amrwbenc = null;
     volume_key = null;
     voms = null;
     vorbis-tools = null;
