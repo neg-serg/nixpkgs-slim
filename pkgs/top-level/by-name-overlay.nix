@@ -1744,6 +1744,7 @@ let
     helm = null;
     helm-ls = null;
     helmfile = null;
+    helix = null;
     helmholtz = null;
     help2man = null;
     hepmc2 = null;
