@@ -1353,6 +1353,8 @@ let
     gdm = null;
     geary = null;
     geckodriver = null;
+    gecode = null;
+    gecode_3 = null;
     gedit = null;
     geekbench = null;
     gegl = null;
