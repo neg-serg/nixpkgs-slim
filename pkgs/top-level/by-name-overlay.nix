@@ -3176,6 +3176,7 @@ let
     musl-fts = null;
     musl-obstack = null;
     mustache-hpp = null;
+    mustache-go = null;
     mutagen = null;
     mutest = null;
     mutt = null;
