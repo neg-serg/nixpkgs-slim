@@ -136,6 +136,7 @@ let
     fastfetch = null;
     fclones = null;
     fd = null;
+    fixDarwinDylibNames = null;
     ffmpegthumbnailer = null;
     fheroes2 = null;
     figlet = null;
