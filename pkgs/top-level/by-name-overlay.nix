@@ -1745,6 +1745,7 @@ let
     helm-ls = null;
     helmfile = null;
     helix = null;
+    helix-unwrapped = null;
     helmholtz = null;
     help2man = null;
     hepmc2 = null;
