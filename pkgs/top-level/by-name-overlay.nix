@@ -4188,6 +4188,7 @@ let
     scspell = null;
     scummvm = null;
     sd = null;
+    sd-switch = null;
     sdcc = null;
     sdl12-compat = null;
     sdl2-compat = null;
