@@ -230,6 +230,7 @@ let
     jq = null;
     just = null;
     kanata = null;
+    kbd = null;
     kexec-tools = null;
     khal = null;
     kitty = null;
