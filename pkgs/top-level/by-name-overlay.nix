@@ -818,6 +818,7 @@ let
     darling-dmg = null;
     dart-sass = null;
     dash = null;
+    dbus-broker = null;
     dasht = null;
     datamodel-code-generator = null;
     dateutils = null;
