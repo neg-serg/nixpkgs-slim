@@ -246,6 +246,7 @@ let
     autossh = null;
     avahi = null;
     avahi-compat = null;
+    avisynthplus = null;
     avrdude = null;
     avrlibc = null;
     avro-c = null;
