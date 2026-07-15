@@ -3340,6 +3340,7 @@ let
     nixos-render-docs-redirects = null;
     nixos-shell = null;
     nixpkgs-fmt = null;
+    nixpkgs-openjdk-updater = null;
     nixpkgs-review = null;
     nixpkgs-reviewFull = null;
     nkeys = null;
