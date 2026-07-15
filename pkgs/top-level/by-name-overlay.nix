@@ -1201,6 +1201,7 @@ let
     fvs2 = null;
     fvwm2 = null;
     fwupd-efi = null;
+    fwupd = null;
     fzf = null;
     fzy = null;
     g15daemon = null;
