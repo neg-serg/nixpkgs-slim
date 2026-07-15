@@ -53,6 +53,7 @@ let
     axel = null;
     bandwhich = null;
     bash-completion = null;
+    bpftools = null;
     bat = null;
     bc = null;
     beets = null;
@@ -116,6 +117,7 @@ let
     efibootmgr = null;
     efivar = null;
     eigen = null;
+    elfutils = null;
     endless-sky = null;
     entr = null;
     epr = null;
@@ -162,6 +164,7 @@ let
     glib = null;
     gnome-bluetooth = null;
     gnum4 = null;
+    gnutls = null;
     gnumake = null;
     gnulib = null;
     gnuchess = null;
@@ -169,6 +172,7 @@ let
     gnutar = null;
     goaccess = null;
     goimapnotify = null;
+    gperf = null;
     gopass = null;
     gptfdisk = null;
     graphene = null;
@@ -207,6 +211,7 @@ let
     imagemagick = null;
     inetutils = null;
     inotify-tools = null;
+    intltool = null;
     inxi = null;
     ioping = null;
     iotop = null;
@@ -235,11 +240,18 @@ let
     lapack = null;
     lbzip2 = null;
     libadwaita = null;
+    libapparmor = null;
+    libarchive = null;
     libcap = null;
     libdrm = null;
+    libfido2 = null;
+    libgcrypt = null;
+    libgpg-error = null;
     libmpc = null;
     libnotify = null;
     libpng = null;
+    libpwquality = null;
+    libseccomp = null;
     libredirect = null;
     libselinux = null;
     libsemanage = null;
@@ -257,6 +269,7 @@ let
     lz4 = null;
     mailcap = null;
     makeDBusConf = null;
+    makeBinaryWrapper = null;
     mangohud = null;
     manix = null;
     marksman = null;
@@ -334,6 +347,7 @@ let
     p7zip = null;
     pamixer = null;
     pango = null;
+    passwdqc = null;
     papirus-icon-theme = null;
     par = null;
     parallel = null;
@@ -351,6 +365,7 @@ let
     pi-coding-agent = null;
     pigz = null;
     playerctl = null;
+    polkit = null;
     plocate = null;
     pngquant = null;
     powertop = null;
