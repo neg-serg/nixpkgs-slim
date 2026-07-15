@@ -186,7 +186,7 @@ let
       if types.shellPackage.check shell then
         "/run/current-system/sw${shell.shellPath}"
       else if types.package.check shell then
-        throw "${shell} is not a shell package"
+        if isString shell then shell else throw "${shell} is not a shell package"
       else
         shell;
 

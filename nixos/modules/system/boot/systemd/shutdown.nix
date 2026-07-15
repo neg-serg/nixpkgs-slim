@@ -65,7 +65,7 @@ in
     ++ lib.optionals cfg.shell.enable [
       pkgs.runtimeShell
     ]
-    ++ map (c: removeAttrs c [ "text" ]) (builtins.attrValues cfg.contents);
+    ++ map (c: c.source) (builtins.attrValues cfg.contents);
 
     systemd.mounts = [
       {
