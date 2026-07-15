@@ -121,6 +121,7 @@ let
     amazon-ec2-utils = null;
     amd-blis = null;
     amdgpu_top = null;
+    amf = null;
     amiri = null;
     aml = null;
     amnezia-vpn = null;
