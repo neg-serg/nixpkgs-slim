@@ -4134,6 +4134,7 @@ let
     s3fs = null;
     sabnzbd = null;
     sacrifice = null;
+    sad = null;
     safe = null;
     safecopy = null;
     safeeyes = null;
