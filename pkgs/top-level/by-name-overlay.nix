@@ -10,7 +10,7 @@ let
     else mapAttrs (name: _: baseDirectory + "/${shard}/${name}/package.nix") (readDir (baseDirectory + "/${shard}"));
   packageFiles = mergeAttrsList (mapAttrsToList namesForShard (readDir baseDirectory));
   isMainByname = lib.hasSuffix "/pkgs/by-name" (builtins.toString baseDirectory);
-  # Whitelist: 5221 packages (out of ~21,388 in pkgs/by-name/)
+  # Whitelist: 5223 packages (out of ~21,388 in pkgs/by-name/)
   whitelist = {
     OVMF-xen = null;
     SDL2_gfx = null;
@@ -2995,6 +2995,7 @@ let
     merecat = null;
     merge-ut-dictionaries = null;
     mergerfs = null;
+    merve = null;
     mesa-demos = null;
     mesa_glu = null;
     mescc-tools = null;
@@ -3193,6 +3194,7 @@ let
     nauty = null;
     navidrome = null;
     nbd = null;
+    nbytes = null;
     ncdns = null;
     ncdu = null;
     ncftp = null;
