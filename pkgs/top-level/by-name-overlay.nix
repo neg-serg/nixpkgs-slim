@@ -48,6 +48,7 @@ let
     asciinema-agg = null;
     atop = null;
     autoconf-archive = null;
+    autoPatchelfHook = null;
     autoreconfHook = null;
     axel = null;
     bandwhich = null;
