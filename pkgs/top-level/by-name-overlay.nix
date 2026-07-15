@@ -3454,6 +3454,7 @@ let
     openafs = null;
     openal-soft = null;
     openapi-generator-cli = null;
+    openapv = null;
     openarena = null;
     openasar = null;
     openbabel = null;
