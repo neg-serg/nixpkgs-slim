@@ -1693,6 +1693,7 @@ let
     gvproxy = null;
     gweather-locations = null;
     gx-go = null;
+    gyre-fonts = null;
     gzdoom = null;
     h2o = null;
     ha-mcp = null;
