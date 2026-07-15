@@ -249,6 +249,7 @@ let
     lutgen = null;
     lxc = null;
     lz4 = null;
+    mailcap = null;
     makeDBusConf = null;
     mangohud = null;
     manix = null;
