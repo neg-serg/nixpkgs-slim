@@ -265,6 +265,7 @@ let
     minizip = null;
     mpc = null;
     mpdas = null;
+    mpdecimal = null;
     mpdris2 = null;
     mpfr = null;
     mpv = null;
@@ -419,6 +420,7 @@ let
     tailscale = null;
     taoup = null;
     tcptraceroute = null;
+    tzdata = null;
     tdl = null;
     tealdeer = null;
     terminus_font = null;
