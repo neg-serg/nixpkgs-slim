@@ -285,91 +285,6 @@ rec {
     }
   );
 
-  # KVM image for proxmox in VMA format
-  proxmoxVMA = forMatchingSystems [ "x86_64-linux" ] (
-    system:
-    with import ./.. { inherit system; };
-
-    hydraJob (
-      (import ./lib/eval-config.nix {
-        inherit system;
-        modules = [
-          ./modules/virtualisation/proxmox-image.nix
-        ];
-      }).config.system.build.VMA
-    )
-  );
-
-  # Keeping the old name for compatibility
-  proxmoxImage = proxmoxVMA;
-
-  # cloud-init image compatible with instructions given here:
-  # https://pve.proxmox.com/wiki/Cloud-Init_Support
-  proxmoxCloudImage = forMatchingSystems [ "x86_64-linux" ] (
-    system:
-    with import ./.. { inherit system; };
-
-    hydraJob (
-      (import ./lib/eval-config.nix {
-        inherit system;
-        modules = [
-          ./modules/virtualisation/proxmox-image.nix
-        ];
-      }).config.system.build.cloudImage
-    )
-  );
-
-  # LXC tarball for proxmox
-  proxmoxLXC = forMatchingSystems [ "x86_64-linux" ] (
-    system:
-    with import ./.. { inherit system; };
-
-    hydraJob (
-      (import ./lib/eval-config.nix {
-        inherit system;
-        modules = [
-          ./modules/virtualisation/proxmox-lxc.nix
-        ];
-      }).config.system.build.tarball
-    )
-  );
-
-  # A disk image that can be imported to Amazon EC2 and registered as an AMI
-  amazonImage = forMatchingSystems [ "x86_64-linux" "aarch64-linux" ] (
-    system:
-
-    with import ./.. { inherit system; };
-
-    hydraJob (
-      (import ./lib/eval-config.nix {
-        inherit system;
-        modules = [
-          configuration
-          versionModule
-          ./maintainers/scripts/ec2/amazon-image.nix
-        ];
-      }).config.system.build.amazonImage
-    )
-
-  );
-  amazonImageZfs = forMatchingSystems [ "x86_64-linux" "aarch64-linux" ] (
-    system:
-
-    with import ./.. { inherit system; };
-
-    hydraJob (
-      (import ./lib/eval-config.nix {
-        inherit system;
-        modules = [
-          configuration
-          versionModule
-          ./maintainers/scripts/ec2/amazon-image-zfs.nix
-        ];
-      }).config.system.build.amazonImage
-    )
-
-  );
-
   # An image that can be imported into incus and used for container creation
   incusContainerImage =
     forMatchingSystems
@@ -519,13 +434,6 @@ rec {
       {
         boot.isContainer = true;
         imports = [ ./modules/profiles/minimal.nix ];
-      }
-    );
-
-    ec2 = makeClosure (
-      { ... }:
-      {
-        imports = [ ./modules/virtualisation/amazon-image.nix ];
       }
     );
 

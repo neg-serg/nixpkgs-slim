@@ -9,20 +9,12 @@ let
   inherit (lib) types;
 
   imageModules = {
-    amazon = ../../maintainers/scripts/ec2/amazon-image.nix;
-    azure = ../virtualisation/azure-image.nix;
     cloudstack = ../../maintainers/scripts/cloudstack/cloudstack-image.nix;
-    digital-ocean = ../virtualisation/digital-ocean-image.nix;
-    google-compute = ../virtualisation/google-compute-image.nix;
-    hyperv = ../virtualisation/hyperv-image.nix;
-    linode = ../virtualisation/linode-image.nix;
     lxc = ../virtualisation/lxc-container.nix;
     lxc-metadata = ../virtualisation/lxc-image-metadata.nix;
     oci = ../virtualisation/oci-image.nix;
     openstack = ../../maintainers/scripts/openstack/openstack-image.nix;
     openstack-zfs = ../../maintainers/scripts/openstack/openstack-image-zfs.nix;
-    proxmox = ../virtualisation/proxmox-image.nix;
-    proxmox-lxc = ../virtualisation/proxmox-lxc.nix;
     qemu-efi = ../virtualisation/disk-image.nix;
     qemu = {
       imports = [ ../virtualisation/disk-image.nix ];
@@ -40,7 +32,6 @@ let
     kubevirt = ../virtualisation/kubevirt.nix;
     vagrant-virtualbox = ../virtualisation/vagrant-virtualbox-image.nix;
     virtualbox = ../virtualisation/virtualbox-image.nix;
-    vmware = ../virtualisation/vmware-image.nix;
     iso = ../installer/cd-dvd/iso-image.nix;
     iso-installer = ../installer/cd-dvd/installation-cd-base.nix;
     sd-card = {

@@ -138,8 +138,6 @@
   ./services/audio/jack.nix
   ./services/audio/mpd.nix
   ./services/audio/pulseaudio.nix
-  ./services/backup/borgbackup.nix
-  ./services/backup/restic.nix
   ./services/desktops/accountsservice.nix
   ./services/desktops/ayatana-indicators.nix
   ./services/desktops/blueman.nix
@@ -181,7 +179,6 @@
   ./services/logging/logrotate.nix
   ./services/logging/rsyslogd.nix
   ./services/logging/syslog-ng.nix
-  ./services/mail/mail.nix
   ./services/misc/devmon.nix
   ./services/misc/fstrim.nix
   ./services/misc/graphical-desktop.nix
@@ -348,7 +345,6 @@
   ./virtualisation/container-config.nix
   ./virtualisation/containers.nix
   ./virtualisation/docker.nix
-  ./virtualisation/hyperv-guest.nix
   ./virtualisation/libvirtd.nix
   ./virtualisation/lxc.nix
   ./virtualisation/nixos-containers.nix
