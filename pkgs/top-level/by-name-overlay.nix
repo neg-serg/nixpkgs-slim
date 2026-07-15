@@ -3236,6 +3236,7 @@ let
     neovim-node-client = null;
     neovim-remote = null;
     neovim-unwrapped = null;
+    nerd-font-patcher = null;
     nest = null;
     net-snmp = null;
     netatalk = null;
