@@ -161,6 +161,7 @@ let
     gnum4 = null;
     gnumake = null;
     gnuchess = null;
+    gnu-config = null;
     gnutar = null;
     goaccess = null;
     goimapnotify = null;
