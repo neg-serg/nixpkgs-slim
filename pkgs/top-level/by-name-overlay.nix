@@ -1685,6 +1685,7 @@ let
     tdl = null;
     tealdeer = null;
     teams = null;
+    termcap = null;
     telepathy-glib = null;
     terminus_font = null;
     tevent = null;
