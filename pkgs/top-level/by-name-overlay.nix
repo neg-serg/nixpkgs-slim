@@ -825,6 +825,7 @@ let
     davis = null;
     davix = null;
     davmail = null;
+    davs2 = null;
     dawarich = null;
     dbip-country-lite = null;
     dblatex = null;
