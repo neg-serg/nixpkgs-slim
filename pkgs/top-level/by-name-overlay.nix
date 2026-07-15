@@ -154,6 +154,7 @@ let
     apksigner = null;
     apktool = null;
     apparmor-bin-utils = null;
+    apparmor-pam = null;
     apparmor-parser = null;
     apparmor-profiles = null;
     apparmor-teardown = null;
