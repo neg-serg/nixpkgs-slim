@@ -1955,6 +1955,7 @@ let
     isolate = null;
     isort = null;
     ispc = null;
+    ispell = null;
     isso = null;
     isync = null;
     itgmania = null;
