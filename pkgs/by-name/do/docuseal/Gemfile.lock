@@ -507,7 +507,7 @@ GEM
     rubyXL (3.4.35)
       nokogiri (>= 1.10.8)
       rubyzip (>= 3.2.2)
-    rubyzip (3.2.2)
+    rubyzip (3.4.0)
     securerandom (0.4.1)
     semantic_range (3.1.1)
     shakapacker (9.7.0)
